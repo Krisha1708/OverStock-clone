@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bb8a3557a3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Kitchen</title>
+    <style>
+       body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+             #header {
+           width:95%;
+           display: flex;
+           margin:auto;
+           justify-content: space-between;
+           padding:25px 0 15px 0;
+           border-bottom: 1px solid rgb(194, 193, 193);
+       }
+
+       #logo img {
+           width:35px;
+           vertical-align: top;
+       }
+
+       #logo h2 {
+           font-size: 30px;
+           font-weight: 400;
+           display: inline-block;
+           margin-top:-5px;
+           margin-bottom:0;
+           color:#000;
+       }
+
+       #search-bar {
+           width:65%;
+       }
+
+       #search-bar input {
+           width:95%;
+           padding:10px;
+           border-top-left-radius: 5px;
+           border-bottom-left-radius: 5px;
+           background-color: #f9fafb;
+           border: 1px solid rgb(194, 193, 193);
+           margin:0;
+       }
+
+       #search-bar input:focus {
+           outline:none;
+       }
+
+       #search-bar input::placeholder {
+           font-family: 'poppins', sans-serif;
+       }
+
+       #search-bar i {
+           width:5%;
+           background-color: orangered;
+           padding:11px 0px;
+           text-align: center;
+           color:#fff;
+           vertical-align: middle;
+           margin-left:-6px;
+           cursor:pointer;
+           border-top-right-radius: 5px;
+           border-bottom-right-radius: 5px;
+       }
+
+        #menu ul {
+            width:100%;
+            margin:0;
+            padding:0;
+        }
+
+       #menu ul li {
+           display: inline-block;
+           padding-left:25px;
+           text-align: center;
+       }
+
+       #menu ul li a {
+           color: #020202;
+           text-decoration: none;
+       }
+
+       #menu ul li a i {
+           font-size: 25px;
+       }
+
+       #menu ul li a span {
+           font-size: 13px;
+           display: block;
+           text-decoration: none;
+       }
+
+       #product-pages {
+           width:100%;
+           display:flex;
+           justify-content: center;
+           padding:20px 0;
+       }
+
+       #product-pages ul li {
+           display: inline-block;
+           padding-right:40px;
+       }
+
+       #product-pages ul li a {
+           color:#000;
+           text-decoration: none;
+           font-weight: 400;
+       }
+
+       #product-pages ul li a:hover {
+           border-bottom: 3px solid orangered;
+       }
+
+        #outer-box {
+            width:90%;
+            margin: auto;
+            padding:50px 0;
+        }
+
+       #categ h1{
+           margin-bottom: 10px;
+       }
+
+       select{
+           padding: 5px 15px;
+           margin-bottom: 12px;
+           font-family: 'Poppins', sans-serif;
+       }
+
+       #container{
+           width: 100%;
+           display: grid;
+           margin-top: 80px;
+           grid-template-columns: repeat(3,1fr);
+           gap: 30px;
+       }
+
+        #container>div{
+           border: 1px solid rgb(164, 164, 164);
+           padding-bottom: 20px;
+       }
+
+       #container>div>h3 {
+           padding:10px 20px;
+           font-weight: 600;
+           font-size: 22px;
+       }
+
+       #container>div>span {
+           font-size: 18px;
+           font-weight: 500;
+           padding:10px 20px;
+       }
+
+       #container>div p{
+           color: grey;
+           font-size: 14px;
+           margin-top: 10px;
+           padding:10px 20px;
+       }
+
+       #container>div>#btnDiv {
+           width:100%;
+           margin:10px 20px;
+           
+       }
+
+       #container>div>#btnDiv>button {
+           background-color:orangered;
+           border: 0px;
+           color:#fff;
+           padding:10px 20px;  
+           font-size: 18px;
+           font-weight: 600;
+           font-family: 'Poppins', sans-serif;
+           cursor: pointer;
+        }
+
+        #container>div>#btnDiv>i {
+            color:rgb(227, 227, 227);
+            font-size: 30px;
+            padding-left:20px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        @media all and (max-width: 1075px){
+
+            #container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            
+        
+            #search-bar {
+            width: 45%;
+            }
+
+            #search-bar input {
+                width: 88%;
+            }
+
+            #search-bar >i {
+                width: 12%;
+                padding-right: 0;
+                padding-left: 0;
+                text-align: center;
+            }
+        }   
+
+        @media all and (max-width:750px){
+
+            #container{
+                grid-template-columns: repeat(1,1fr);
+            }
+
+            #discount-popup {
+                font-size: 11px;
+            }
+
+            #header {
+                display:block;
+                text-align: center;
+            }
+
+            #search-bar {
+                width:100%;
+                padding:30px 0;
+            }
+
+            #menu {
+                justify-content: center;
+            }
+
+            #menu ul li {
+                padding:0;
+            }
+
+            #menu ul li:nth-child(2) {
+                padding:0 40px;
+            }
+
+            .si{
+              
+                margin-top: 30px;
+                
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <!-- navbar will be here -->
+    <div id="header">
+        <a href="../index.html"><div id="logo">
+        <img src="https://lh3.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw" alt="img"/>
+        <h2>overstock</h2>
+        </div></a>
+        <div id="search-bar">
+            <input type="text" placeholder="Search"/>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="../user signup signin/user.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Account</span>
+                </a></li>
+                <li><a href="../favourites/favouries.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Lists</span>
+                </a></li>
+                <li><a href="../cartpage.html">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <span>Cart</span>
+                </a></li>
+            </ul>
+        </div>  
+    </div>
+    <div id="product-pages">
+        <ul>
+            <li><a href="../product backend/furniture.html">Furniture</a></li>
+            <li><a href="../product backend/decor.html">Decor</a></li>
+            <li><a href="../product backend/kitchen.html">Kitchen</a></li>
+            <li><a href="../product backend/outdoor.html">Outdoor</a></li>
+        </ul>
+    </div>
+    <div id="outer-box">
+    <div id="categ">
+            <h1>Filter By Price</h1>
+            <select  id="furn" >
+                <option value="none">Select Price Range</option>
+                <option value="belo6000">Up to 6000/- </option>
+                <option value="up10000">Up to 10,000/-</option>
+                <option value="above10000">above 10,000/-</option>
+            </select>    
+    </div>
+    <div id="container">
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var proData = JSON.parse(localStorage.getItem("productData"));
+    var div = document.querySelector("#container");
+    var addCartArr=JSON.parse(localStorage.getItem("cartList"))||[];
+    var favListArr=JSON.parse(localStorage.getItem("favList"))||[];
+                    
+    displayData(proData)
+        function displayData(data){
+            document.querySelector("#container").innerHTML=""
+
+                    data.forEach(function(el){
+                        if(el.categ==="kitchen"){
+                                // console.log(el)
+
+                            var box = document.createElement("div");
+                            var image = document.createElement("img");
+                            image.setAttribute("id","content")
+                            image.setAttribute("src", el.proImg);
+                            var name = document.createElement("h3");
+                            name.innerText=el.proName;
+                            var price = document.createElement("span")
+                            price.innerText=`INR ${el.price} `;
+                            var descreption = document.createElement("p");
+                            descreption.innerText=el.descreption;
+                            var btnDiv = document.createElement("div");
+                            btnDiv.setAttribute("id","btnDiv");
+                            var addCart = document.createElement("button")
+                            addCart.innerText="Add To Cart";
+                            addCart.addEventListener("click",function(){
+                            addCartFun(el);
+                            })
+                            var favList = document.createElement("i")
+                            favList.setAttribute("class","fa-solid fa-heart")
+                            favList.addEventListener("click",function(){
+                                favList.style.color="orangered";
+                                favListFun(el);
+                            })
+                            btnDiv.append(addCart,favList)
+                            box.append(image,name,price,descreption,btnDiv)
+                            document.querySelector("#container").append(box);
+                        }
+                    })
+        }    
+
+        function addCartFun(el){
+            var filteredCartList = addCartArr.filter(function(item){
+                return el.productID == item.productID;
+            });
+            if(filteredCartList.length > 0){
+                alert("Item already added to cart. Please Check your cart once");
+            }else {
+                addCartArr.push(el);
+                localStorage.setItem("cartList",JSON.stringify(addCartArr));
+            }
+        };
+        function favListFun(el){
+            var filteredFavlist = favListArr.filter(function(item){
+                return el.productID == item.productID;
+            });
+            if(filteredFavlist.length > 0){
+                alert("item already added");
+            } else {
+            favListArr.push(el);
+            document.querySelector("i")
+            localStorage.setItem("favList",JSON.stringify(favListArr));
+            }
+        }
+
+        var selected = document.querySelector("#furn")
+            selected.addEventListener("change", function(){
+                filPrice(proData)
+            })
+   
+        function filPrice(data){
+            if(selected.value=="belo6000"){
+                var selected_Data = data.filter(function(ele){
+                    return Number(ele.price)<6000
+                })
+                console.log(selected_Data)
+                displayData(selected_Data) 
+            }
+            else if(selected.value=="up10000"){
+                var selected_Data = data.filter(function(ele){
+                    return Number(ele.price)<10000
+                })
+                console.log(selected_Data)
+                displayData(selected_Data) 
+            }
+            else if(selected.value=="above10000"){
+                var selected_Data = data.filter(function(ele){
+                    return Number(ele.price)>10000
+                })
+                console.log(selected_Data)
+                displayData(selected_Data) 
+            }
+            else if(selected.value=="none"){
+                displayData(proData)
+            }
+           
+        }
+</script>

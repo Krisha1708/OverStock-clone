@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverSock.com</title>
+    <script src="https://kit.fontawesome.com/bb8a3557a3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        /* #extras{
+            color: red;
+          text-align: center;
+          /* background-color: #faf1f2; */
+          /* margin-top: 10px; */
+          /* margin-bottom: -20px; */
+          /* display: block;
+          position: absolute;
+          width: 60%;
+          margin: auto;
+          left: 190px;
+          padding: 20px;
+        }  */
+        
+           /* navv till here */
+        body{
+            height: 800px;
+        }
+
+             #header {
+           width:95%;
+           display: flex;
+           margin:auto;
+           justify-content: space-between;
+           padding:25px 0 15px 0;
+           border-bottom: 1px solid rgb(194, 193, 193);
+       }
+
+       #logo img {
+           width:35px;
+           vertical-align: top;
+       }
+
+       #logo h2 {
+           font-size: 30px;
+           font-weight: 400;
+           display: inline-block;
+           margin-top:-5px;
+           margin-bottom:0;
+           color:#000;
+       }
+
+       #search-bar {
+           width:65%;
+       }
+
+       #search-bar input {
+           width:95%;
+           padding:10px;
+           border-top-left-radius: 5px;
+           border-bottom-left-radius: 5px;
+           background-color: #f9fafb;
+           border: 1px solid rgb(194, 193, 193);
+           margin:0;
+       }
+
+       #search-bar input:focus {
+           outline:none;
+       }
+
+       #search-bar input::placeholder {
+           font-family: 'poppins', sans-serif;
+       }
+
+       #search-bar i {
+           width:5%;
+           background-color: orangered;
+           padding:11px 0px;
+           text-align: center;
+           color:#fff;
+           vertical-align: middle;
+           margin-left:-6px;
+           cursor:pointer;
+           border-top-right-radius: 5px;
+           border-bottom-right-radius: 5px;
+       }
+
+        #menu ul {
+            width:100%;
+            margin:0;
+            padding:0;
+        }
+
+       #menu ul li {
+           display: inline-block;
+           padding-left:25px;
+           text-align: center;
+       }
+
+       #menu ul li a {
+           color: #020202;
+           text-decoration: none;
+       }
+
+       #menu ul li a i {
+           font-size: 25px;
+       }
+
+       #menu ul li a span {
+           font-size: 13px;
+           display: block;
+           text-decoration: none;
+       }
+
+       #product-pages {
+           width:100%;
+           display:flex;
+           justify-content: center;
+           padding:20px 0;
+       }
+
+       #product-pages ul li {
+           display: inline-block;
+           padding-right:40px;
+       }
+
+       #product-pages ul li a {
+           color:#000;
+           text-decoration: none;
+           font-weight: 400;
+       }
+
+       #product-pages ul li a:hover {
+           border-bottom: 3px solid orangered;
+       }
+
+        #container h2{
+            color: #585252;
+        }
+        #container{
+            width:80%;
+            display: grid;
+            grid-template-columns: 50% 2% 50%;
+            grid-template-rows: repeat(1,465px);
+            gap: 20px;
+            /* border: 1px solid; */
+            margin: auto;
+            margin-top: 20px;
+            height: 630px;
+            padding: 0px 30px;
+            /* padding-top: -25px; */
+            /* padding-top: -10px; */
+        }
+        #container>div{
+            /* border: 1px solid red;  */
+            box-sizing: border-box;
+            padding: 40px;
+            padding-left: 50px;
+        }
+        #form1>h4,#diff>div>h4{
+            font-weight: 200;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: #637077;
+        }
+        #form2>h4{
+            font-weight: 200;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: #637077;
+        }
+        #form1,#form2{
+            width: 90%;
+            /* border: 1px solid green; */
+            
+        }
+        input[type="text"]{
+            padding: 9px 15px;
+            width: 100%;
+            /* border-radius: 5px; */
+        }
+        input[type="password"]{
+            padding: 9px 15px;
+            /* background-color: #0272a2; */
+            width: 100%;
+            margin: auto;
+            /* border-radius: 5px; */
+        }
+        .email-subscribe {
+            background-color: #f9fafc;
+            text-align: left;
+            margin: 20px 0;
+            border: 1px solid #dadcdf;
+            border-radius: 3px;
+            padding: 8px 20px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        hr{
+            width: 80%;
+            margin: auto;
+            color: grey;
+        }
+        .btn{
+            width: 100%;
+            margin: auto;
+            padding: 13px 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #0272a2;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 0px 1px black;
+
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: #036089;
+        }
+        #form2>.btn{
+           background-color: RGB(39, 133, 96);
+           margin-top: 25px;
+        }
+        #form2>.btn:hover{
+            background-color:  #217553;
+        }
+        #diff{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 1px solid red; */
+        }
+        #diff>div{
+            width: 45%;
+            /* margin: auto; */
+            /* border: 1px solid green; */
+        }
+        .create-terms{
+            font-size: 13px;
+            text-align: center;
+            margin-top: 10px;
+            color: rgb(51, 50, 50);
+            line-height: 20px;
+        }
+        .create-terms>a{
+            color: black;
+            font-weight: 700;
+        }
+        .ckea{
+            margin-top: 5px;
+        }
+        #pass{
+            padding: 9px 16px;
+        }
+        .vl{
+            border-left: 1px solid rgb(201, 198, 198);
+            height: 500px;
+            margin: auto;
+            margin-top: 90px;
+            
+        }
+        #form2 #atag{
+            color: #236683;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont{
+            margin-top: 20px;
+            background-color: #fafafa;
+            color: #686463;
+            border: 1px solid #686463;
+            font-weight: bold;
+            text-shadow: none;
+            text-align: center;
+            font-size: 17px;
+            padding: 9px 10px;
+        }
+        .cont:hover{
+            background-color: white;
+        }
+        @media all and (min-width: 200px) and (max-width:450px){
+            #container{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        
+        .vl{
+            border-left: 1px solid transparent;
+            height: 0px;
+            margin: auto;
+            margin-top: -20px;
+            margin-bottom: -90px;
+            
+        }
+        #container #main1,#main2{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #diff{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #diff>div{
+            width: 100%;
+        }
+        }
+        @media all and (min-width: 451px) and (max-width:950px){
+            #container{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        
+        .vl{
+            border-left: 1px solid transparent;
+            height: 0px;
+            margin: auto;
+            margin-top: -20px;
+            margin-bottom: -90px;
+            
+        }
+        #container #main1,#main2{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #diff{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #diff>div{
+            width: 100%;
+        }
+        }
+
+        @media all and (max-width: 1075px){
+            
+           
+        
+            #search-bar {
+            width: 45%;
+            }
+
+            #search-bar input {
+                width: 88%;
+            }
+
+            #search-bar >i {
+                width: 12%;
+                padding-right: 0;
+                padding-left: 0;
+                text-align: center;
+            }
+        }   
+
+        @media all and (max-width:750px){
+
+
+            #discount-popup {
+                font-size: 11px;
+            }
+
+            #header {
+                display:block;
+                text-align: center;
+            }
+
+            #search-bar {
+                width:100%;
+                padding:30px 0;
+            }
+
+            #menu {
+                justify-content: center;
+            }
+
+            #menu ul li {
+                padding:0;
+            }
+
+            #menu ul li:nth-child(2) {
+                padding:0 40px;
+            }
+
+            .si{
+              
+                margin-top: 30px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="../index.html"><div id="logo">
+        <img src="https://lh3.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw" alt="img"/>
+        <h2>overstock</h2>
+        </div></a>
+        <div id="search-bar">
+            <input type="text" placeholder="Search"/>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="../user signup signin/user.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Account</span>
+                </a></li>
+                <li><a href="../favourites/favouries.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Lists</span>
+                </a></li>
+                <li><a href="../cartpage.html">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <span>Cart</span>
+                </a></li>
+            </ul>
+        </div>  
+    </div>
+    <div id="product-pages">
+        <ul>
+            <li><a href="../product backend/furniture.html">Furniture</a></li>
+            <li><a href="../product backend/decor.html">Decor</a></li>
+            <li><a href="../product backend/kitchen.html">Kitchen</a></li>
+            <li><a href="../product backend/outdoor.html">Outdoor</a></li>
+        </ul>
+    </div>
+    <!-- the div containing both signin/signup -->
+    <div id="extras"></div>
+    <div id="container">
+        <!-- 1st div -->
+        <div id="main1">
+            <h2>Create Account</h2>
+            <form id="form1">
+                <h4>Email Address*</h4>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <div id="diff">
+                    <div>
+                        <h4>Create Password*</h4>
+                        <input type="password" id="pass" placeholder="Password">
+                    </div>
+                    <div>
+                        <h4>Confirm Password*</h2>
+                        <input type="password" id="passcon"  placeholder="Confirm Password">
+                    </div>
+                </div>
+                <div class="email-subscribe">
+                    <input type="checkbox" name="omail_subscribe" value="true" id="Checkforemailsavings">
+                     <span>Sign up today for <strong>exclusive offers</strong> from Overstock.com delivered right to your inbox**</span> 
+                 </div>
+                 <input type="submit" value="Create Account"  class="btn">
+                 <hr>
+                 <div id="click" class="btn cont">Continue as Guest</div>
+                 <p class="create-terms">
+                    By creating an account or continuing as a Guest, you agree to our <a href="https://help.overstock.com/app/answers/detail/a_id/63" target="_blank">Terms &amp; Conditions</a> and <a href="https://help.overstock.com/app/answers/detail/a_id/65" target="_blank">Privacy Policy</a>.
+                </p>
+                <p class="create-terms">
+                    <a href="https://help.overstock.com/app/answers/detail/a_id/63" target="_blank">Terms &amp; Conditions</a> | <a href="https://help.overstock.com/app/answers/detail/a_id/65" target="_blank">Privacy Policy</a>.
+                    <p class="create-terms ckea">**You can unsubscribe at any time</p>
+                </p>
+            </form>
+        </div>
+        <!-- vertical line -->
+        <div class="vl"></div>
+        <!-- 2nd div -->
+        <div id="main2">
+            <h2>Sign In</h2>
+            <form id="form2">
+                <h4>Email Address*</h4>
+                <input type="text" id="emailS" placeholder="Email" size="30">
+                <h4>Password*</h4>
+                <input type="password" id="passS" size="45" placeholder="Password" name="password">
+                 <input type="submit" value="Sign In" class="btn">
+                    <p></p>
+                </p>
+                <a href="#" onclick="forgotPassFun(event)" id="atag">Forgot Your Password</a>
+            </form>
+        </div>
+    </div>
+    <!--Add the footer here  -->
+    <footer>
+
+    </footer>
+</body>
+</html>
+<script src="user.js" >
+     
+</script>
+                
+                

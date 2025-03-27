@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    
+    <title>paymentpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div id="top1">
+            <a href="index.html"><img id="img" src="https://searchlogovector.com/wp-content/uploads/2018/09/overstock-logo-vector.png" alt="logo"></a>
+        </div>
+        <h5 id="server">You are using our secure server</h5>
+    </div>
+<hr>
+<div id="top2">
+    <img id="img1" src="https://ak1.ostkcdn.com/img/mxc/20170922_fedexLogo.png" alt="fedEx">
+    <div id="fedex">
+         <h5 >Secure checkout provided by FedEx International. </h5>
+          <h5 id="nospace"> Your order total includes customs and taxes, if applicable.</h5>
+        </div>
+</div>
+<select name="country" id="country">
+    <option value="">United Kingdom / English</option>
+    <option value="">Lebanon/ Arabe</option>
+    <option value="">Russia / Russian</option>
+    <option value="">Deutschland / Deutsch</option>
+    <option value="">España / Español</option>
+    <option value="">France / Français</option>
+    <option value="">Italia / Italiano</option>
+    <option value="">Portugal / Português</option>
+    <option value="">China / Chinese</option>
+</select>
+
+    <a href="cartpage.html"><h5 id="backtocart"><< Back to cart</h5></a>
+<div id="border">
+     <div id="form1">
+         <div id="formheading">
+             <p>Billing Address</p>
+         </div>
+         <div id=" bill">
+             <div id="info">
+                 <h5>Email*</h5>
+                 <h5>First Name*</h5>
+                 <h5>Last Name*</h5>
+                 <p>Company</p>
+                 <p>Tax ID</p>
+                 <h5>Address Line 1*</h5>
+                 <p>Address Line 2</p>
+                 <h5>Country*</h5>
+                 <h5>City*</h5>
+                 <p>State</p>
+                 <p>ZIP Code</p>
+                 <h5>Phone # *</h5>
+             </div>
+             <div>
+                 <form id="forml">
+                     <input id="email"  class="mandatory"  type="text">
+                     <input id="firstname" class="mandatory" type="text">
+                     <input id="lastname"  class="mandatory" type="text">
+                     <input id="company" type="text">
+                     <input id="taxid" type="text">
+                     <input id="line1" class="mandatory"  type="text">
+                     <input id="line2" type="text">
+                     <select name="country" id="country1">
+                         <option value="">Select Country</option>
+                         <option value="Angola">Angola</option>
+                         <option value="Anguilla">Anguilla</option>
+                         <option value="Antigua">Antigua</option>
+                         <option value="Argentina">Argentina</option>
+                         <option value="Armenia">Armenia</option>
+                         <option value="Aruba">Aruba</option>
+                         <option value="Australia">Australia</option>
+                         <option value="Austria">Austria</option>
+                         <option value="Azerbaijan">Azerbaijan</option>
+                         <option value="Azores">Azores</option>
+                         <option value="Bahamas">Bahamas</option>
+                         <option value="Bahrain">Bahrain</option>
+                         <option value="Belgium">Belgium</option>
+                         <option value="Brazil">Brazil</option>
+                         <option value="Cambodia">Cambodia</option>
+                         <option value="Canada">Canada</option>
+                         <option value="China">China</option>
+                         <option value="Congo">Congo</option>
+                         <option value="Donimica">Donimica</option>
+                         <option value="France">France</option>
+                         <option value="Greece">Greece</option>
+                         <option value="Kuwait">Kuwait</option>
+                         <option value="India">India</option>
+                         <option value="Mexico">Mexico</option>
+                         <option value="Oman">Oman</option>
+                         <option value="Pakistan">Pakistan</option>
+                     </select>
+                     <input id="city" type="text">
+                     <input id="state" type="text">
+                     <input id="code" type="text">
+                     <input id="phone" type="number">
+                 </form>
+             </div>
+         </div>
+     </div>
+     <div id="form2">
+         <div id="formheading2">
+             <p>Shipping Address</p>
+         </div>
+         <div>
+            <h5>Email*</h5>
+            <h5>First Name*</h5>
+            <h5>Last Name*</h5>
+            <p>Company</p>
+            <p>Tax ID</p>
+            <h5>Address Line 1*</h5>
+            <p id="adress">Address Line 2</p>
+            <h5>Country*</h5>
+            <h5>City*</h5>
+            <p>State</p>
+            <p>ZIP Code</p>
+            <h5>Phone # *</h5>
+         </div>
+         <div>
+            <form id="formr">
+                <input id="email1" type="text">
+                <input id="firstname1" type="text">
+                <input id="lastname1" type="text">
+                <input id="company1" type="text">
+                <input id="taxid1" type="text">
+                <input id="line11" type="text">
+                <input id="line21" type="text">
+                <p>(We cannot ship to PO box, APO or FPO addresses.)</p>
+                <select name="country" id="country2">
+                    <option value="">Select Country</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antigua">Antigua</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Azores">Azores</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="Congo">Congo</option>
+                    <option value="Donimica">Donimica</option>
+                    <option value="France">France</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="India">India</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select>
+                <input id="city1" type="text">
+                <input id="state1" type="text">
+                <input id="code1" type="text">
+                <input id="phone1" type="number">
+            </form>
+         </div>
+
+     </div>
+</div>
+<div id="totalprice">
+   <table id="table">
+    <thead>
+        <tr>
+          <th><a href="cartpage.html"><button id="editbtn">EDIT</button></a></th>
+          <th>Your Items</th>
+          <th>Price</th>
+          <th>	Total Price</th>
+        </tr>
+      </thead>
+      <tbody id="body"></tbody>
+   </table>
+</div>
+<div id="shipping">
+    <div><p>Shipping Method</p>
+    </div>
+    <div>
+        <input type="radio" name="Method" id="Method" value="4224.05" checked>International Standard - 0.00 INR
+        <p>Estimated Delivery Date: 2022-05-24</p>
+        <br>
+        <input type="radio" name="Method" id="Method" value="4720.48 ">International Express -0.00 INR
+        <p>	Estimated Delivery Date: 2022-05-19</p>
+    </div>
+ </div>
+
+ <!-- confirm order -->
+  <div>
+      <table id="table1">
+          <thead>
+              <tr>
+                  <th>Confirm Order</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody id="body2">
+              <tr>
+                  <td>Subtotal:</td>
+                  <td id="Subtotal"></td>
+              </tr>
+              <tr>
+                  <td>Shipping:</td>
+                  <td>0.00</td>
+              </tr>
+              <tr>
+                  <td>Duty and Tax:</td>
+                  <td>0.00</td>
+              </tr>
+              <tr>
+                  <td>Order Total:</td>
+                  <td id ="Subtotal"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+ <!-- Payment Information -->
+ <div id="paymentinfo">
+     <div>
+         <p>Payment Information</p>
+     </div>
+     <div>
+         <img src="https://ztransaction.bongous.com/static/css/images/pm/visa.png" alt="visa">
+         <img src="https://ztransaction.bongous.com/static/css/images/pm/mastercard.png" alt="mastercard">
+     </div>
+
+     <!-- .......... -->
+     <div id="payment_down">
+         <div>
+                <div><h5>Card Type*</h5></div>
+                <div><select name="card" id="card">
+                    <option value="">select</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Master Card</option>
+                </select></div>
+         </div>         
+         <div >
+            <div> <h5>Credit Card Number*</h5></div>
+            <div>  <input id="cardnumber" type="text"></div>
+        </div>   
+        <div>
+            <div><h5>Expiration Date*</h5></div>
+            <div><select name="month" id="month">
+                <option value="">-</option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                 <option value="10">10</option>
+                 <option value="11">11</option>
+                 <option value="12">12</option>
+             </select>
+             <select name="year" id="year">
+                <option value="">----</option>
+                <option value="2022">2022</option>
+                 <option value="2023">2023</option>
+                 <option value="2024">2024</option>
+                 <option value="2025">2025</option>
+                 <option value="2026">2026</option>
+                 <option value="2027">2027</option>
+                 <option value="2028">2028</option>
+                 <option value="2029">2029</option>
+                 <option value="2030">2030</option>
+                 <option value="2031">2031</option>
+                 <option value="2032">2032</option>
+             </select></div>
+        </div>   
+        <div>
+        <div><h5>Security Code*</h5></div>
+        <div><input id="securitycode" type="text"></div>
+         </div>
+    </div>
+    <!-- -------------- -->
+ </div>
+
+ <div id="signup">
+     <img  src="https://storage.crossborder.fedex.com/s3bongous/f98ca95b1b79417f2c4685355a3cfba2.png" alt="signup">
+     <input type="checkbox" id="check">When you sign up for email, you'll get exclusive coupons, sale notifications, and product ideas. ( ¡ )
+     <p>Privacy Policy</p>
+ </div>
+   <hr id="hr2">
+
+   <div id="end">
+       <div>
+        <p>By clicking the "Place order" button, you acknowledge that your order will be processed and fulfilled by</p>
+        <p> <b style="text-decoration: underline;">FedEx Cross Border</b> and you agree to <b style="text-decoration: underline;">FedEx Cross Border Terms</b> and <b style="text-decoration: underline;">Conditions</b> and <b style="text-decoration: underline;">Privacy Policy.</b></p>
+       </div>
+       <div>
+        <button id="endbtn">PLACE ORDER</button>
+       
+       </div>
+   </div>
+</body>
+</html>
+
+<script src="payment.js"></script>

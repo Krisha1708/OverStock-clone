@@ -1,0 +1,707 @@
+body {
+    font-family: 'poppins', sans-serif;
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+#discount-popup {
+   background-color: #000;
+   padding:10px 0;
+   color:#fff;
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+
+strong {
+   padding:0 5px;
+}
+
+i.fa-xmark {
+   font-size: 25px;
+   color:#fff;
+   position: absolute;
+   top:8px;
+   right:20px;
+   cursor: pointer;
+}
+
+#select-country {
+   width:100%;
+   background-color: #f9fafb;
+   padding:10px;
+   border: 1px solid rgb(194, 193, 193);
+}
+
+#select-country span {
+   font-size: 13px;
+   color:gray;
+}
+
+#select-country select {
+   width:50px;
+   border:0px;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+#select-country select option {
+   font-family: 'poppins', sans-serif;
+}
+
+#header {
+   width:95%;
+   display: flex;
+   margin:auto;
+   justify-content: space-between;
+   padding:25px 0 15px 0;
+   border-bottom: 1px solid rgb(194, 193, 193);
+}
+
+#logo img {
+   width:35px;
+   vertical-align: top;
+}
+
+#logo h2 {
+   font-size: 30px;
+   font-weight: 400;
+   display: inline-block;
+   margin-top:-5px;
+   margin-bottom:0;
+   color:#000;
+}
+
+#search-bar {
+   width:65%;
+}
+
+#search-bar input {
+   width:95%;
+   padding:10px;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   background-color: #f9fafb;
+   border: 1px solid rgb(194, 193, 193);
+   margin:0;
+}
+
+#search-bar input:focus {
+   outline:none;
+}
+
+#search-bar input::placeholder {
+   font-family: 'poppins', sans-serif;
+}
+
+#search-bar i {
+   width:5%;
+   background-color: orangered;
+   padding:11px 0px;
+   text-align: center;
+   color:#fff;
+   vertical-align: middle;
+   margin-left:-6px;
+   cursor:pointer;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+#menu ul {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#menu ul li {
+   display: inline-block;
+   padding-left:25px;
+   text-align: center;
+}
+
+#menu ul li a {
+   color: #020202;
+   text-decoration: none;
+}
+
+#menu ul li a i {
+   font-size: 25px;
+}
+
+#menu ul li a span {
+   font-size: 13px;
+   display: block;
+   text-decoration: none;
+}
+
+#product-pages {
+   width:100%;
+   display:flex;
+   justify-content: center;
+}
+
+#product-pages ul li {
+   display: inline-block;
+   padding-right:40px;
+}
+
+#product-pages ul li a {
+   color:#000;
+   text-decoration: none;
+   font-weight: 400;
+}
+
+#product-pages ul li a:hover {
+   border-bottom: 3px solid orangered;
+}
+
+#banner {
+   width:100%;
+   padding:70px 0;
+   background: url("https://ak1.ostkcdn.com/img/mxc/04292022-HP-A1-INTL-1400x550.jpg") right bottom no-repeat;
+   background-size: cover;
+   text-align: center;
+}
+
+#banner h2 {
+   font-size: 70px;
+   color:rgb(44, 44, 44);
+   margin:0;
+   margin-bottom:30px;
+   background-color:rgb(221, 255, 244);
+   display: inline-block;
+   font-weight: 600;
+   padding:0px 20px;
+   height:60px;
+   line-height: 55px;
+}
+
+#banner h1 {
+    margin:0;
+    margin-bottom:30px;
+    color:rgb(44, 44, 44);
+    background-color:rgb(221, 255, 244);
+    display: inline-block;
+    font-weight: 800;
+    font-size: 100px;
+    height:80px;
+    line-height: 55px;
+}
+
+#banner h3 {
+   font-size: 25px;
+   margin:0px;
+   margin-bottom:120px;
+   background-color:#fff;
+   display: inline-block;
+   font-weight: 500;
+   padding:0 30px; 
+}
+
+#banner a {
+    color:#000;
+    background-color: rgb(221, 255, 244);
+    padding:10px 40px;
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#off-deals {
+   width:95%;
+   margin:auto;
+   text-align: center;
+   padding-bottom:50px;
+}
+
+#off-deals h3 {
+   font-size: 35px;
+   font-weight: 600;
+}
+
+#deals {
+   width:100%;
+   display:grid;
+   grid-template-columns: repeat(6,1fr);
+   gap:20px;
+}
+
+#deals a {
+   color:#000;
+}
+
+#deals a div img {
+    background-color: rgb(245, 245, 245);
+}
+
+#deals a div h4 {
+    font-weight: 500;
+}
+
+#home-decor-banner {
+    width:95%;
+    margin:auto;
+    background: url("https://ak1.ostkcdn.com/img/mxc/04282022_HomeDecorRefresh_Desktopv2.jpg?imwidth=1080") right bottom no-repeat;
+    background-size: cover;
+    text-align:center;
+}
+
+#background-shadow {
+    background-color: rgba(0, 0, 0, 0.164);
+    padding:100px 0;
+}
+
+#background-shadow h2 {
+    color:#fff;
+    margin:0;
+    margin-bottom:30px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 80px;
+    height:80px;
+    line-height: 55px;
+    margin:0;
+    line-height: 55px;
+}
+
+#background-shadow h2 span {
+    color:rgb(221, 255, 244);
+}
+
+#background-shadow h3 {
+    color:#fff;
+    font-size: 40px;
+    font-weight: 600;
+    margin:0;
+}
+
+#background-shadow a {
+    color:#000;
+    background-color: rgb(221, 255, 244);
+    padding:10px 40px;
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top:90px;
+}
+
+#categories {
+    width:95%;
+    margin:auto;
+    text-align: center;
+    padding:30px 0;
+}
+
+#categories h3 {
+   font-size: 35px;
+   font-weight: 600;
+}
+
+#main-categories {
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:20px;
+}
+
+#main-categories a {
+    color:#000;
+}
+
+#main-categories a:nth-child(5)>div {
+    background-color: orangered;
+    font-size: 40px;
+    font-weight: 600;
+    color:#fff;
+    padding:50px 0;
+}
+
+.new-collection {
+    width:95%;
+    margin:auto;
+    padding-bottom: 70px;
+}
+
+.new-collection h3 {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.collection {
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+
+.collection>div {
+    background-color: rgb(246, 246, 246);
+    padding-bottom:20px;
+    cursor: pointer;
+}
+
+.collection>div>h3 {
+    text-align: left;
+    margin:0;
+    padding:10px 20px;   
+    font-size: 23px;
+    color:rgb(50, 50, 50)
+}
+
+.collection>div>p {
+    padding: 0 20px;
+    margin:0;
+}
+
+#furniture-banner {
+    width:95%;
+    margin:auto;
+    background: url("https://ak1.ostkcdn.com/img/mxc/04282022_SpringTimeSlumber_INTL_Desktop.jpg?imwidth=1920") left top no-repeat;
+    margin-bottom:50px;
+}
+
+#overlay {
+    width:100%;
+    padding:100px 0 100px 50px;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+#overlay h2 {
+    color:#fff;
+    font-size: 80px;
+    margin:0;
+    line-height: 90px;
+}
+
+#overlay h2.skin {
+    color:rgb(251, 234, 201);
+    margin-bottom: 30px;
+}
+
+#overlay a {
+    background-color: rgb(251, 234, 201);
+    padding:10px 40px;
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+    color:#000;
+}
+
+.featured div {
+    text-align: center;
+}
+
+.featured div h4 {
+    padding:0 40px;
+    margin:0;
+}
+
+.featured div p {
+    padding:0 40px;
+}
+
+#rooms-banner {
+    width:95%;
+    margin:auto;
+    background: url("https://ak1.ostkcdn.com/img/mxc/030822-RIUpdate-Dsk.jpg?imwidth=1200") left top no-repeat;
+    background-size: contain;
+    margin-bottom: 50px;
+}
+
+#banner-content {
+    width:30%;
+    margin: auto;
+    text-align: center;
+    padding:40px;
+}
+
+#banner-content h4{
+    font-size: 25px;
+    margin:0;
+    font-weight: 600;
+}
+
+#banner-content h3 {
+    font-size: 32px;
+    margin:0;
+}
+
+#banner-content p {
+    font-size: 18px;
+}
+
+#banner-content a {
+    background-color: #fff;
+    padding:10px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    color:#000;
+}
+
+.style {
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+
+.new-collection a.styles {
+    width:13%;
+    margin: auto;
+    background-color: #000;
+    display: block;
+    color:#fff;
+    text-align: center;
+    padding:10px 0;
+    border-radius: 5px;
+    margin-top:30px;
+}
+
+.new-styles {
+    border-bottom: 1px solid rgb(194, 193, 193);
+    padding-bottom: 30px;
+}
+
+#footer {
+    width:100%;
+    background-color: #545658;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:50px 80px;
+    margin-top:80px;
+}
+
+#footer ul li {
+    list-style: none;
+    padding-bottom:20px;
+}
+
+#footer ul li a {
+    color:#fff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#footer ul li a.bold {
+    font-weight: 500;
+}
+
+#footer-bottom {
+    width:100%;
+    display:flex;
+    background-color: #2f3337;
+    justify-content: space-between;
+    padding:30px 120px;
+}
+
+#footer-bottom div span {
+    display:block;
+    color:#fff;
+    font-size:14px;
+}
+
+#footer-bottom div ul li {
+    display: inline-block;
+    padding-left:20px;
+}
+
+#footer-bottom div ul li a {
+    color:#fff;
+    font-size:14px;
+}
+
+.new-collection a{
+    color: #000;
+}
+
+@media all and (max-width:767px){
+    #search-bar {
+        width:45%;
+    }
+
+    #search-bar input {
+        width:88%;
+    }
+
+    #search-bar i {
+        width:12%;
+        padding-right:0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #deals {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #home-decor-banner h2 {
+        font-size: 60px;
+    }
+
+    #home-decor-banner h3 {
+        font-size: 30px;
+    }
+
+    #main-categories {
+        grid-template-columns:repeat(2,1fr) ;
+    }
+
+    #main-categories span{
+        display: block;
+    }
+
+    #main-categories a:nth-child(5)>div {
+    padding:20px 0;
+    font-size: 20px;
+    }
+
+    .new-collection a.styles {
+        width:25%;
+    }
+    .collection {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .collection>div>img {
+        width:100%;
+    }
+
+    #banner-content {
+        width:60%;
+        background-color: #dbedff;
+    }
+
+    #banner-content h4 {
+        font-size: 20px;
+    }
+
+    #banner-content h3 {
+        font-size: 25px;
+    }
+
+    #banner-content p {
+        font-size: 14px;
+    }
+
+    #banner-content a {
+        font-size: 14px;
+    }
+
+    #footer-bottom {
+        display:block;
+    }
+
+    #footer-bottom ul {
+        padding:0;
+    }
+
+    #footer-bottom div ul li{
+        padding-left: 0;
+        padding-right:20px;
+    }
+}
+
+@media all and (max-width:480px){
+    #discount-popup {
+        font-size: 11px;
+    }
+
+    #header {
+        display:block;
+        text-align: center;
+    }
+
+    #search-bar {
+        width:100%;
+        padding:30px 0;
+    }
+
+    #menu {
+        justify-content: center;
+    }
+
+    #menu ul li {
+        padding:0;
+    }
+
+    #menu ul li:nth-child(2) {
+        padding:0 40px;
+    }
+
+    #banner h2 {
+        font-size: 50px;
+        line-height: 35px;
+        height:40px;
+    }
+
+    #banner h1 {
+         font-size: 70px;
+         line-height: 40px;
+         height:50px;
+    }
+
+    #banner h3 {
+        font-size: 20px;
+    }
+
+    #deals {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #home-decor-banner {
+        width:100%;
+    }
+
+    #home-decor-banner h2 {
+        line-height: 70px;
+    }
+
+    #home-decor-banner h3{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    #main-categories {
+        grid-template-columns: 1fr;
+    }
+
+    #furniture-banner {
+        width:100%;
+    }
+
+    .collection {
+        padding-left:10px;
+        padding-right: 10px;
+        gap:20px;
+        grid-template-columns: 1fr;
+    }
+
+    #banner-content {
+        width:100%;
+    }
+
+    .new-collection a.styles {
+        width:40%;
+    }
+
+    #footer{
+        grid-template-columns: repeat(2,1fr);
+        padding:30px;
+    }
+
+    #footer-bottom {
+        padding:30px;
+    }
+}

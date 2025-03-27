@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bb8a3557a3.js" crossorigin="anonymous"></script>
+    <title>Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+             #header {
+           width:95%;
+           display: flex;
+           margin:auto;
+           justify-content: space-between;
+           padding:25px 0 15px 0;
+           border-bottom: 1px solid rgb(194, 193, 193);
+       }
+
+       #logo img {
+           width:35px;
+           vertical-align: top;
+       }
+
+       #logo h2 {
+           font-size: 30px;
+           font-weight: 400;
+           display: inline-block;
+           margin-top:-5px;
+           margin-bottom:0;
+           color:#000;
+       }
+
+       #search-bar {
+           width:65%;
+       }
+
+       #search-bar input {
+           width:95%;
+           padding:10px;
+           border-top-left-radius: 5px;
+           border-bottom-left-radius: 5px;
+           background-color: #f9fafb;
+           border: 1px solid rgb(194, 193, 193);
+           margin:0;
+       }
+
+       #search-bar input:focus {
+           outline:none;
+       }
+
+       #search-bar input::placeholder {
+           font-family: 'poppins', sans-serif;
+       }
+
+       #search-bar i {
+           width:5%;
+           background-color: orangered;
+           padding:11px 0px;
+           text-align: center;
+           color:#fff;
+           vertical-align: middle;
+           margin-left:-6px;
+           cursor:pointer;
+           border-top-right-radius: 5px;
+           border-bottom-right-radius: 5px;
+       }
+
+        #menu ul {
+            width:100%;
+            margin:0;
+            padding:0;
+        }
+
+       #menu ul li {
+           display: inline-block;
+           padding-left:25px;
+           text-align: center;
+       }
+
+       #menu ul li a {
+           color: #020202;
+           text-decoration: none;
+       }
+
+       #menu ul li a i {
+           font-size: 25px;
+       }
+
+       #menu ul li a span {
+           font-size: 13px;
+           display: block;
+           text-decoration: none;
+       }
+
+       #product-pages {
+           width:100%;
+           display:flex;
+           justify-content: center;
+           padding:20px 0;
+       }
+
+       #product-pages ul li {
+           display: inline-block;
+           padding-right:40px;
+       }
+
+       #product-pages ul li a {
+           color:#000;
+           text-decoration: none;
+           font-weight: 400;
+       }
+
+       #product-pages ul li a:hover {
+           border-bottom: 3px solid orangered;
+       }
+
+        #outer-box {
+            width:90%;
+            margin: auto;
+            padding:50px 0;
+        }
+
+       #categ h1{
+           margin-bottom: 10px;
+       }
+
+       select{
+           padding: 5px 15px;
+           margin-bottom: 12px;
+           font-family: 'Poppins', sans-serif;
+       }
+
+       #container{
+           width: 100%;
+           display: grid;
+           margin-top: 80px;
+           grid-template-columns: repeat(3,1fr);
+           gap: 30px;
+       }
+
+        #container>div{
+           border: 1px solid rgb(164, 164, 164);
+           padding-bottom: 20px;
+       }
+
+       #container>div>h3 {
+           padding:10px 20px;
+           font-weight: 600;
+           font-size: 22px;
+       }
+
+       #container>div>span {
+           font-size: 18px;
+           font-weight: 500;
+           padding:10px 20px;
+       }
+
+       #container>div p{
+           color: grey;
+           font-size: 14px;
+           margin-top: 10px;
+           padding:10px 20px;
+       }
+
+       #container>div>#btnDiv {
+           width:100%;
+           margin:10px 20px;
+           
+       }
+
+       #container>div>#btnDiv>button {
+           background-color:orangered;
+           border: 0px;
+           color:#fff;
+           padding:10px 20px;  
+           font-size: 18px;
+           font-weight: 600;
+           font-family: 'Poppins', sans-serif;
+           cursor: pointer;
+        }
+
+        #container>div>#btnDiv>i {
+            color:rgb(227, 227, 227);
+            font-size: 30px;
+            padding-left:20px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        @media all and (max-width: 1075px){
+
+            #container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            
+        
+            #search-bar {
+            width: 45%;
+            }
+
+            #search-bar input {
+                width: 88%;
+            }
+
+            #search-bar >i {
+                width: 12%;
+                padding-right: 0;
+                padding-left: 0;
+                text-align: center;
+            }
+        }   
+
+        @media all and (max-width:750px){
+
+            #container{
+                grid-template-columns: repeat(1,1fr);
+            }
+
+            #discount-popup {
+                font-size: 11px;
+            }
+
+            #header {
+                display:block;
+                text-align: center;
+            }
+
+            #search-bar {
+                width:100%;
+                padding:30px 0;
+            }
+
+            #menu {
+                justify-content: center;
+            }
+
+            #menu ul li {
+                padding:0;
+            }
+
+            #menu ul li:nth-child(2) {
+                padding:0 40px;
+            }
+
+            .si{
+              
+                margin-top: 30px;
+                
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <!-- navbar will be here -->
+     <div id="header">
+        <a href="../index.html"><div id="logo">
+        <img src="https://lh3.googleusercontent.com/r1RyQV0Tva6dHjjLQ4xikDyc2uU9OMXxUmnvDM3edGwfBI6tZvDC9XGltno9pH-jkw" alt="img"/>
+        <h2>overstock</h2>
+        </div></a>
+        <div id="search-bar">
+            <input type="text" placeholder="Search"/>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="../user signup signin/user.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Account</span>
+                </a></li>
+                <li><a href="../favourites/favouries.html">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Lists</span>
+                </a></li>
+                <li><a href="../cartpage.html">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <span>Cart</span>
+                </a></li>
+            </ul>
+        </div>  
+    </div>
+    <div id="product-pages">
+        <ul>
+            <li><a href="../product backend/furniture.html">Furniture</a></li>
+            <li><a href="../product backend/decor.html">Decor</a></li>
+            <li><a href="../product backend/kitchen.html">Kitchen</a></li>
+            <li><a href="../product backend/outdoor.html">Outdoor</a></li>
+        </ul>
+    </div>
+    <div id="outer-box">
+    <div id="categ">
+        <h1>Filter By Price</h1>
+        <select  id="furn" >
+            <option value="none">Select Price Range</option>
+            <option value="belo6000">Up to 6000/- </option>
+            <option value="up10000">Up to 10,000/-</option>
+            <option value="above10000">above 10,000/-</option>
+        </select>
+      
+        
+    </div>
+    <div id="container">
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var productData =[
+{"categ":"furniture",
+"proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/ff5469ce703e23efb418f471cecc41d744159a11/Ergonomic-Office-Chair-with-Lumbar-Support-Back%2C-Adjustable-Headrest.jpg?imwidth=480&impolicy=medium",
+"price":"9546","descreption":"Ergonomic Office Chair with Lumbar Support Back, Adjustable Headrest",
+"proName":"Ergonomic Office Chair ","productID":"pro1"},
+{"categ":"furniture","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/55f95147744841c1e70e9dce40dafd4d8a7bd1c4/HOME-Office-Chair%2C-Mid-back-Lumbar-Support-Swivel-Computer-Mesh-Chair.jpg?imwidth=480&impolicy=medium","price":"7470","descreption":"HOME Office Chair, Mid-back Lumbar Support Swivel Computer Mesh Chair","proName":"HOME Office Chair","productID":"pro2"},
+{"categ":"furniture","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/b08e53c50d7978abf463e3685b0ccbd3011ddf16/Luxe-Combo-Console-Table.jpg?imwidth=480&impolicy=medium","price":"14423","descreption":"Luxe Combo Console Table","proName":"Living Room Table","productID":"pro3"},
+{"categ":"furniture","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/a2ce3948b824dd52a63ce4d61f32d78ff6eca5c1/Middlebrook-Helbling-Round-Coffee-Table.jpg?imwidth=480&impolicy=medium","price":"13256","descreption":"Middlebrook Helbling Round Coffee Table","proName":"Coffee Tables","productID":"pro4"},
+{"categ":"furniture","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/3120ea5f4e327b86a86e0d091f7ed66fea35afb9/Alexis-Coffee-Table-Blackened-Bronze.jpg?imwidth=480&impolicy=medium","price":"16989","descreption":"Alexis Metal and Glass Coffee Table","proName":" Sofa & End Tables","productID":"pro5"},
+{"categ":"decor","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/ddab284f176f8bb8e293415ea2ed502c8f8882f2/Dressing-Mirror-Arched-Wall-Mirror-Standing%2C-Leaning-Hanging.jpg?imwidth=480&impolicy=medium","price":"15466","descreption":"Top Full-length Freestanding/ Leaning/ Hanging Wall Mirror","proName":"Wall Mirror","productID":"pro6"},
+{"categ":"decor","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/e5c603a44bad872143940b4460698e010cf33cf2/Modern-Thin-Frame-Wall-Mounted-Hanging-Bathroom-Mirror.jpg?imwidth=480&impolicy=medium","price":"9132","descreption":"Modern Thin Frame Wall-mounted Hanging Bathroom Vanity Wall Mirror","proName":"Wall Mirror2","productID":"pro7"},
+{"categ":"decor","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/56998f44e6080dd3585e518ed7d0b89b69bff169/Designart-%27Gouache-Sapphire-on-Gray%27-Modern-%26-Contemporary-Framed-Canvas.jpg?imwidth=480&impolicy=medium","price":"5165","descreption":"Designart 'Gouache Sapphire on Gray' Modern & Contemporary Framed Canvas - Blue","proName":"Framed Canvas","productID":"pro8"},
+{"categ":"decor","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/611f1f7470b6a061cb270987aa0805de17c3caf1/FirsTime-%26-Co.%C2%AE-Big-Time-Wall-Clock%2C-American-Crafted%2C-Oil-Rubbed-Bronze%2C-Plastic%2C-40-x-2-x-40-in.jpg?imwidth=480&impolicy=medium","price":"6010","descreption":"Big Time Wall Clock, Plastic, 40 x 2 x 40 in,American Designed","proName":" Clocks","productID":"pro9"},
+{"categ":"kitchen","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/79ecb51799cde82ae493150858b2d3684d42bdad/6.3Qt-Electric-Tilt-Head-Food-Stand-Mixer-6-Speed-660W.jpg?imwidth=480&impolicy=medium","price":"10372","descreption":" Electric Tilt-Head Food Stand Mixer 6 Speed 660W - 6.3 Quart","proName":" Kitchen Mixers","productID":"pro10"},
+{"categ":"kitchen","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/8e039694611e1944542f60115701d10be561d14d/Ninja-BL480-Auto-iQ-Blender.jpg?imwidth=480&impolicy=medium","price":"7345","descreption":"Ninja Auto-iQ Blender","proName":"Blender","productID":"pro11"},
+{"categ":"kitchen","proImg":"https://ak1.ostkcdn.com/images/products/16292410/Hamilton-Beach-FlexBrew-2-Way-Coffee-Maker-6e5eaeef-6c83-4424-8fa1-a325caa4e88d_600.jpg?imwidth=480&impolicy=medium","price":"8456","descreption":"Hamilton Beach FlexBrew 2-Way Coffee Maker","proName":" Coffee Makers","productID":"pro12"},
+{"categ":"kitchen","proImg":"https://ak1.ostkcdn.com/images/products/29900025/Proctor-Silex-1.5L-Air-Fryer-3ba936a5-09b3-417f-ae1c-b8c60bf2c454_600.jpg?imwidth=480&impolicy=medium","price":"9642","descreption":"Proctor Silex 1.5 Liter Air Fryer","proName":"Coffee Makers","productID":"pro13"},
+{"categ":"kitchen","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/270c4df1abd654219d18a3213edca3053e9bfe09/Hamilton-Beach-2-Way-Programmable-Coffee-Maker%2C.jpg?imwidth=480&impolicy=medium","price":"9413","descreption":"Hamilton Beach 2-Way Programmable Coffee Maker,","proName":"Coffee Makers","productID":"pro14"},
+{"categ":"outdoor","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/81a6fbe700cee765fff2c63a30a50c34a6c65929/Propel-Universal-Shade-Cover-for-14%27-Trampoline.jpg?imwidth=480&impolicy=medium","price":"7898","descreption":"Trampoline Share This Product: Propel Universal Shade Cover for 14' ","proName":"Trampoline","productID":"pro15"},
+{"categ":"outdoor","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/87662cae5cba9fbd2f1068af97296f16e841fc54/Vilano-Urbana-Single-Speed-Folding-Bike.jpg?imwidth=480&impolicy=medium","price":"31586","descreption":"Vilano Urbana Single Speed Folding Bike","proName":" Cycling Equipment","productID":"pro16"},
+{"categ":"outdoor","proImg":"https://ak1.ostkcdn.com/images/products/12433128/Dynacraft-Krusher-26-Bike-3dedabe7-b08a-4524-8f76-9a3bdbe774a3_600.jpg?imwidth=480&impolicy=medium","price":"8997","descreption":"Dynacraft Krusher 26-Inch Bike","proName":"Bycycle","productID":"pro17"},
+{"categ":"outdoor","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/8f4c163b9bc0bdd5688cf934b6897a6c2366db93/Adult-Scooter%2C-Height-Adjustable-And-Oversized-Wheels%2C-Youth-Folding-Scooter.jpg?imwidth=480&impolicy=medium","price":"8329","descreption":"Adult Scooter, Height Adjustable And Oversized Wheels, Youth Folding Scooter","proName":"Skater","productID":"pro18"},
+{"categ":"outdoor","proImg":"https://ak1.ostkcdn.com/images/products/is/images/direct/950b1e65ed2649cd9d56df2b64eb4db8dd12bb46/Backyard-Discovery-Buckley-Hill-All-Cedar-Wooden-Swing-Set.jpg?imwidth=480&impolicy=medium","price":"22748","descreption":"Backyard Discovery Buckley Hill All Cedar Wooden Swing Set","proName":"Swing Set","productID":"pro19"}]
+    
+      
+    localStorage.setItem("productData",JSON.stringify(productData))
+
+
+    var proData = JSON.parse(localStorage.getItem("productData"));
+    var div = document.querySelector("#container");
+    var addCartArr=JSON.parse(localStorage.getItem("cartList"))||[];
+    var favListArr=JSON.parse(localStorage.getItem("favList"))||[];
+    
+    displayData(proData)
+        function displayData(data){
+            document.querySelector("#container").innerHTML=""
+                data.forEach(function(el){
+                    if(el.categ==="furniture"||el.categ=="--"){
+                        var box = document.createElement("div");
+                        var image = document.createElement("img");
+                        image.setAttribute("id","content")
+                        image.setAttribute("src", el.proImg);
+                        var name = document.createElement("h3");
+                        name.innerText=el.proName;
+                        var price = document.createElement("span")
+                        price.innerText=`INR ${el.price} `;
+                        var descreption = document.createElement("p");
+                        descreption.innerText=el.descreption;
+                        var btnDiv = document.createElement("div");
+                        btnDiv.setAttribute("id","btnDiv");
+                        var addCart = document.createElement("button")
+                        addCart.innerText="Add To Cart";
+                        addCart.addEventListener("click",function(){
+                        addCartFun(el);
+                        })
+                        var favList = document.createElement("i")
+                        favList.setAttribute("class","fa-solid fa-heart");
+                        favList.addEventListener("click",function(){
+                            favList.style.color="orangered";
+                            favListFun(el);
+                        })
+                        btnDiv.append(addCart,favList)
+                        box.append(image,name,price,descreption,btnDiv)
+                        document.querySelector("#container").append(box);
+                    }
+                })
+            }        
+        function addCartFun(el){
+            var filteredCartList = addCartArr.filter(function(item){
+                return el.productID == item.productID;
+            });
+            if(filteredCartList.length > 0){
+                alert("Item already added to cart. Please Check your cart once");
+            }else {
+                addCartArr.push(el);
+                localStorage.setItem("cartList",JSON.stringify(addCartArr));
+            }
+        };
+        function favListFun(el){
+            var filteredFavlist = favListArr.filter(function(item){
+                return el.productID == item.productID;
+            });
+            if(filteredFavlist.length > 0){
+                alert("item already added");
+            } else {
+            favListArr.push(el);
+            document.querySelector("i")
+            localStorage.setItem("favList",JSON.stringify(favListArr));
+            }
+        }
+
+        var selected = document.querySelector("#furn")
+            selected.addEventListener("change", function(){
+                filPrice(proData)
+            })
+   
+        function filPrice(data){
+            if(selected.value=="belo6000"){
+                var selected_Data = data.filter(function(ele){
+                    return Number(ele.price)<6000
+                })
+                console.log(selected_Data)
+                displayData(selected_Data) 
+            }
+            else if(selected.value=="up10000"){
+                var selected_Data = data.filter(function(ele){
+                    return Number(ele.price)<10000
+                })
+                console.log(selected_Data)
+                displayData(selected_Data) 
+            }
+            else if(selected.value=="above10000"){
+                var selected_Data = data.filter(function(ele){
+                    return Number(ele.price)>10000
+                })
+                console.log(selected_Data)
+                displayData(selected_Data) 
+            }
+            else if(selected.value=="none"){
+                displayData(proData)
+            }
+           
+        }
+
+</script>
